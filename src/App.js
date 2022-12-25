@@ -1,6 +1,8 @@
+import styled from 'styled-components'
+
 function App() {
   return (
-    <div>
+    <Wrapper>
       <header>
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -14,8 +16,12 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </Wrapper>
   );
 }
+
+const Wrapper = styled.div`
+  background-color: ${({ theme }) => theme.elementColors.backgroundColor}
+`
 
 export default App;
